@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="650,500" caption="0,0,0,200" roundcorner="4,4">
+	<Font name="微软雅黑" size="12" bold="true" default="true" />
+	<Font id="1" name="微软雅黑" size="18" />
+	<Font id="2" name="微软雅黑" size="14" />
+	<Font id="3" name="微软雅黑" size="10" />
+    <VerticalLayout bkimage="\\DlgLogin\\bgLogin.png">
+        <HorizontalLayout name="Caption" height="30">
+			<Button name="btnToggle" width="60" height="20" textcolor="#FF288add" hottextcolor="#FF0022FF" padding="10,10,0,0" />
+            <VerticalLayout />
+			<Button name="btnHideSetting" width="30" height="30" normalimage="\\DlgLogin\\btnAVSettingNormal.png" hotimage="\\DlgLogin\\btnAVSettingHot.png" />
+            <Button name="btnClose" width="30" height="30" normalimage="\\DlgLogin\\btnCloseNormal.png" hotimage="\\DlgLogin\\btnCloseHot.png" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+			<VerticalLayout name="verBody" width="350" padding="0,10,0,0">
+				<HorizontalLayout height="120">
+					<VerticalLayout />
+					<VerticalLayout name="Logo" width="80" bkimage="\\DlgLogin\\logo.png" />
+					<VerticalLayout />
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<VerticalLayout name="Join" width="260" padding="45,40,0,0">
+						<Label name="labRoomName" height="20" align="center" textcolor="#FF333333" />
+						<Label name="labRoomID" height="20" padding="0,10,0,0" align="center" textcolor="#FF333333" />
+						<VerticalLayout name="verLoginEdit" visible="false" height="80" padding="0,6,0,0" bkimage="\\DlgLogin\\editInput.png">
+							<Edit name="editUsername" height="30" width="250" numberonly="true" padding="5,5,0,0" bkcolor="#FFefefef" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" />
+							<Edit name="editPSW" height="30" width="250" padding="5,5,0,0" bkcolor="#FFefefef" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" />
+						</VerticalLayout>
+						<Edit name="editDisplayName" height="40" padding="0,24,0,0" align="center" textpadding="4,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" bkimage="\\DlgLogin\\editInputSingle.png" />
+						<Button name="btnJoin" height="40" padding="0,50,0,0" font="1" textcolor="#FFFFFFFF" disabledtextcolor="#FFd2d2d2" align="center" normalimage="\\DlgLogin\\btnLoginDefault.png" hotimage="\\DlgLogin\\btnLoginSelected.png" />
+					</VerticalLayout>
+				</HorizontalLayout>
+			</VerticalLayout>
+			<VerticalLayout name="verAVSetting" width="300">
+				<HorizontalLayout name="AVTab" width="120" height="30" padding="100,10,0,0" bkimage="\\DlgSetting\\optAVTitle.png">
+					<Option name="optAudio" group="AVTab" selected="true" width="60" height="30" textcolor="#FF288ADD" selectedtextcolor="#FFFFFFFF" selectedimage="\\DlgSetting\\optLeftSelect.png"/>
+					<Option name="optVideo" group="AVTab" width="60" height="30" textcolor="#FF288ADD" selectedtextcolor="#FFFFFFFF" selectedimage="\\DlgSetting\\optRightSelect.png"/>
+				</HorizontalLayout>
+				<TabLayout name="tabSetting" width="240" height="400" padding="20,30,0,0">
+					<VerticalLayout >
+						<HorizontalLayout height="20" >
+							<Label name="labMic" width="60" align="right" font="2" textcolor="#FF666666" />
+							<Combo name="comMicDevice" width="180" textpadding="5,0,0,0" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+							</Combo>
+						</HorizontalLayout>
+						<HorizontalLayout height="20" padding="20,20,0,0" >
+							<Label name="labMicVolume" width="40" align="right" textcolor="#FF666666" />
+							<Slider name="sliderMicVolume" height="10" width="140" padding="0,5,0,0" min="0" max="100" bkimage="\\DlgSetting\\sliderVolumeNormal.png" foreimage="\\DlgSetting\\sliderVolumeHot.png" thumbimage="\\DlgSetting\\thumbFullNormal.png" thumbhotimage="\\DlgSetting\\thumbFullHot.png" disabledimage="\\DlgSetting\\sliderVolumeNormal.png"/>
+						</HorizontalLayout>
+						<Option name="optAudioAGC" height="16" padding="20,20,0,0" textpadding="20,0,0,0" textcolor="#FF666666" align="left" normalimage="file='\\DlgSetting\\OptNormal.png' dest='0,0,16,16'" selectedimage="file='\\DlgSetting\\OptSelect.png' dest='0,0,16,16'"/>
+						<Label name="labTestMicTip" height="16" padding="20,10,0,0" textcolor="#FFAAAAAA" />
+						<HorizontalLayout height="24" padding="20,10,0,0" >
+							<Button name="btnTestMic" width="80" textcolor="#FF288add" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png"/>
+							<Progress name="proMicTest" width="130" height="24" padding="5,0,0,0" min="0" max="30000" bkimage="\\DlgSetting\\sliderVolumeTestNormal.png" foreimage="\\DlgSetting\\sliderVolumeTestHot.png" />
+						</HorizontalLayout>
+						<HorizontalLayout height="20" padding="0,50,0,0" >
+							<Label name="labSpeaker" width="60" align="right" font="2" textcolor="#FF666666" />
+							<Combo name="comSpeakerDevice" width="180" textpadding="5,0,0,0" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+							</Combo>
+						</HorizontalLayout>
+						<HorizontalLayout height="20" padding="20,20,0,0" >
+							<Label name="labSpeakerVolume" width="40" align="right" textcolor="#FF666666" />
+							<Slider name="sliderSpeakerVolume" height="10" width="140" padding="0,5,0,0" min="0" max="100" bkimage="\\DlgSetting\\sliderVolumeNormal.png" foreimage="\\DlgSetting\\sliderVolumeHot.png" thumbimage="\\DlgSetting\\thumbFullNormal.png" thumbhotimage="\\DlgSetting\\thumbFullHot.png" />
+						</HorizontalLayout>
+						<Label name="labTestSpeakerTip" height="16" padding="20,10,0,0" textcolor="#FFAAAAAA" />
+						<HorizontalLayout height="24" padding="20,10,0,0" >
+							<Button name="btnTestSpeaker" width="80" textcolor="#FF288add" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png"/>
+							<Progress name="proSpeakerTest" width="130" height="24" padding="5,0,0,0" min="0" max="100" bkimage="\\DlgSetting\\sliderVolumeTestNormal.png" foreimage="\\DlgSetting\\sliderVolumeTestHot.png" />
+						</HorizontalLayout>
+					</VerticalLayout>
+					<VerticalLayout >
+						<HorizontalLayout height="20" >
+							<Label name="labCamera" width="60" align="right" font="2" textcolor="#FF666666" />
+							<Combo name="comCameraDevice" width="180" textpadding="5,0,0,0" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+							</Combo>
+						</HorizontalLayout>
+						<Label name="labShow" width="220" height="150" padding="20,20,0,0" bkcolor="#FFE5E5E5" />
+						<Button name="btnTestCamera" width="80" padding="20,20,0,0" textcolor="#FF288add" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png"/>
+						<Option name="optCapVideo720P" height="16" padding="20,20,0,0" textpadding="20,0,0,0" textcolor="#FF666666" align="left" normalimage="file='\\DlgSetting\\OptNormal.png' dest='0,0,16,16'" selectedimage="file='\\DlgSetting\\OptSelect.png' dest='0,0,16,16'"/>
+					</VerticalLayout>
+				</TabLayout>
+			</VerticalLayout>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

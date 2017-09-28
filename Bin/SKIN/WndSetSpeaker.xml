@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,110">
+    <VerticalLayout bkcolor="#FFF2F2F2">
+        <Label name="labCaption" height="29" textpadding="10,0,0,0" textcolor="#FF333333" />
+		<Label height="1" bkcolor="#FFE5E5E5" />
+		<HorizontalLayout height="20" padding="0,20,0,0">
+			<Label name="labSpeaker" width="70" align="right" textcolor="#FF666666" />
+			<Combo name="comSpeakerDevice" width="180" textpadding="5,0,0,0" itemfont="2" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+			</Combo>
+		</HorizontalLayout>
+		<HorizontalLayout height="20" padding="0,10,0,0" >
+			<Label name="labSpeakerVolume" width="70" align="right" textcolor="#FF666666" />
+			<Slider name="sliderSpeakerVolume" height="10" width="140" padding="0,5,0,0" min="0" max="65535" bkimage="\\DlgSetting\\sliderVolumeNormal.png" foreimage="\\DlgSetting\\sliderVolumeHot.png" thumbimage="\\DlgSetting\\thumbFullNormal.png" thumbhotimage="\\DlgSetting\\thumbFullHot.png" disabledimage="\\DlgSetting\\sliderVolumeNormal.png"/>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

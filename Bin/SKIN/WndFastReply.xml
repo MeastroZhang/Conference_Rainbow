@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="180,100">
+	<Font name="微软雅黑" size="12" bold="true" default="true" />
+    <VerticalLayout bkcolor="#FFF2F2F2">
+		<List name="listReply" header="hidden" itemtextcolor="#FF888888" itemhottextcolor="#FF333333" itemshowhtml="true" vscrollbar="true" bkcolor="#FFFFFFFF" />
+    </VerticalLayout>
+</Window>

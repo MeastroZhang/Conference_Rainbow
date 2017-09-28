@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,500" caption="0,0,0,200" roundcorner="4,4">
+	<Font name="微软雅黑" size="12" bold="true" default="true" />
+	<Font name="微软雅黑" size="18" id="1" />
+    <VerticalLayout bkimage="\\common\\bgLogin.png">
+        <HorizontalLayout name="Caption" height="30">
+			<Button name="btnToggle" width="60" height="20" textcolor="#FF288add" hottextcolor="#FF0022FF" padding="10,10,0,0" />
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\DlgLogin\\btnCloseNormal.png" hotimage="\\DlgLogin\\btnCloseHot.png" />
+        </HorizontalLayout>
+        <HorizontalLayout name="Body">
+            <VerticalLayout />
+            <VerticalLayout width="260">
+                <HorizontalLayout height="30" />
+                <HorizontalLayout name="Logo" height="120">
+                    <VerticalLayout />
+                    <VerticalLayout width="80" bkimage="\\DlgLogin\\logo.png" />
+                    <VerticalLayout />
+                </HorizontalLayout>
+                <VerticalLayout name="Login" width="260">
+					<VerticalLayout name="verJoinEdit" visible="false" height="80" padding="0,30,0,0" bkimage="\\DlgLogin\\editInput.png">
+						<Edit name="editRoomID" height="30" width="250" padding="5,5,0,0" align="center" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" bkcolor="#FFefefef" />
+						<Edit name="editDisplayName" height="30" width="250" padding="5,5,0,0" align="center" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" bkcolor="#FFefefef" />
+					</VerticalLayout>
+                    <VerticalLayout name="verLoginEdit" height="80" padding="0,30,0,0" bkimage="\\DlgLogin\\editInput.png">
+                        <Edit name="editUsername" width="250" height="30" numberonly="true" padding="5,5,0,0" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" bkcolor="#FFefefef" />
+						<HorizontalLayout name="ForgetPSW" enabled="true" height="30" width="250" padding="5,10,0,0">
+							<Edit name="editPSW" width="200" height="30" textpadding="14,3,4,3" textcolor="#FF666666" nativebkcolor="#FFefefef" bkcolor="#FFefefef" />
+							<Button name="btnFPSW" textcolor="#FF288add" hottextcolor="#FF0022FF" />
+						</HorizontalLayout>
+                    </VerticalLayout>
+					<Button name="btnJoin" visible="false" height="40" padding="0,30,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFd2d2d2" align="center" font="1" normalimage="\\DlgLogin\\btnLoginDefault.png" hotimage="\\DlgLogin\\btnLoginSelected.png" />
+                    <Button name="btnLogin" height="40" padding="0,30,0,0" textcolor="#00FFFFFF" disabledtextcolor="#FFd2d2d2" align="center" font="1" normalimage="\\DlgLogin\\btnLoginDefault.png" hotimage="\\DlgLogin\\btnLoginSelected.png" />
+					<Label name="labLoginError" visible="false" height="16" padding="0,20,0,0" textcolor="#FF288ADD"/>
+                </VerticalLayout>
+            </VerticalLayout>
+            <VerticalLayout />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

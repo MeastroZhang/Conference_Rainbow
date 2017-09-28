@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="444,512" caption="0,0,0,44" roundcorner="4,4">
+	<Font name="微软雅黑" size="14" bold="true" default="true" />
+	<Font id="1" name="微软雅黑" size="16" />
+    <HorizontalLayout bkcolor="#FFEFEFEF">
+		<VerticalLayout name="verList" width="170" visible="false" bkcolor="#FF8dbee7">
+			<List name="listChatUser" header="hidden" padding="5,10,5,10" childpadding="5" />
+		</VerticalLayout>
+		<VerticalLayout width="444" bkcolor="#FFe9ecf7">
+			<HorizontalLayout height="43">
+				<Label name="labCaption" width="200" font="1" textcolor="#FF000000" padding="10,0,0,0" />
+				<VerticalLayout />
+				<Button name="btnMin" width="30" padding="0,0,0,14" normalimage="\\DlgPrivateChat\\btnMin.png" hotimage="\\DlgPrivateChat\\btnMinHot.png" />
+				<Button name="btnClose" width="30" padding="0,0,0,14" normalimage="\\DlgPrivateChat\\btnClose.png" hotimage="\\DlgPrivateChat\\btnCloseHot.png" />
+			</HorizontalLayout>
+			<HorizontalLayout bkcolor="#FFE5E5E5" height="1" />
+			<HorizontalLayout>
+				<VerticalLayout>
+					<RichEdit name="richGroupChatView" multiline="true" vscrollbar="true" autovscroll="true" readonly="true" textpadding="10,0,10,0" />
+					<HorizontalLayout bkcolor="#FFE5E5E5" height="1" />
+					<HorizontalLayout height="32">
+						<Button name="btnFace" width="36" height="32" normalimage="\\DlgPrivateChat\\btnFace.png" hotimage="\\DlgPrivateChat\\btnFaceHot.png" />
+						<VerticalLayout />
+					</HorizontalLayout>
+					<RichEdit name="richGroupChatInput" height="66" multiline="true" vscrollbar="true" autovscroll="true" rich="false" textpadding="10,0,10,0" />
+					<HorizontalLayout height="34">
+						<HorizontalLayout />
+						<Button name="btnSend" width="64" height="24" padding="0,0,10,10" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn64px.png" hotimage="\\common\\btn64pxHot.png" />
+					</HorizontalLayout>
+				</VerticalLayout>
+			</HorizontalLayout>
+		</VerticalLayout>
+    </HorizontalLayout>
+</Window>

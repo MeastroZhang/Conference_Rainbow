@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="200,200">
+    <HorizontalLayout name="shareLayout" width="200" height="200">
+        <Button name="btnShare" width="200" height="200" padding="50,50,50,50" />
+    </HorizontalLayout>
+</Window>

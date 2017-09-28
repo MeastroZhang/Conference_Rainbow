@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1022,670" caption="0,0,0,60" roundcorner="4,4">
+    <VerticalLayout>
+        <ActiveX name="ActiveXDemo1" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}"/>
+    </VerticalLayout>
+</Window>

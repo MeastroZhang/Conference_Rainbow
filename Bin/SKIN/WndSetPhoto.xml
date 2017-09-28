@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="150,90">
+	<Font name="微软雅黑" size="14" bold="true" default="true" />
+    <VerticalLayout bkcolor="#FFF2F2F2">
+        <Label name="labCaption" height="29" textpadding="10,0,0,0" textcolor="#FF333333" />
+		<Label height="1" bkcolor="#FFE5E5E5" />
+		<Button name="btnOpenFile" height="30" align="center" textcolor="#FF666666" hotbkcolor="#FFB5D3EC" />
+		<Button name="btnSetPath" height="30" align="center" textcolor="#FF666666" hotbkcolor="#FFB5D3EC" />
+    </VerticalLayout>
+</Window>

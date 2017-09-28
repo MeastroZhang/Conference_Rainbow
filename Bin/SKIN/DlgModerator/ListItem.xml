@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,50">
+    <HorizontalLayout height="50">
+        <Label name="labDisplayName" padding="0,5,0,5" font="1" width="341" height="40" textpadding="107,5,0,5" />
+		<Button name="btnPresent" width="44" padding="0,5,0,5" normalimage="\\DlgModerator\\btnModeratorMode.png" hotimage="\\DlgModerator\\btnModeratorModeHot.png" />
+		<Button name="btnNoPresent" width="44" padding="0,5,0,5" normalimage="\\DlgModerator\\btnPresent.png" hotimage="\\DlgModerator\\btnPresent.png" />
+		<Button name="btnVideo" width="44" padding="40,5,0,5" normalimage="\\common\\btnVideo.png" hotimage="\\common\\btnVideoHot.png" />
+		<Button name="btnVideoClosed" width="44" padding="40,5,0,5" normalimage="\\common\\btnVideoClosed.png" hotimage="\\common\\btnVideoClosedHot.png" />
+		<Button name="btnMic" width="44" padding="40,5,0,5" normalimage="\\common\\btnMic.png" hotimage="\\common\\btnMicHot.png" />
+		<Button name="btnMicClosed" width="44" padding="40,5,0,5" normalimage="\\common\\btnMicClosed.png" hotimage="\\common\\btnMicClosedHot.png" />
+		<Button name="btnKickOut" width="44" padding="66,5,0,5" normalimage="\\DlgConference\\btnExit.png" hotimage="\\DlgConference\\btnExitHot.png"/>
+		<Button name="btnRaiseHand" width="44" padding="66,5,0,5" normalimage="\\DlgModerator\\btnRaiseHand.png" hotimage="\\DlgModerator\\btnForbidHot.png" />
+    </HorizontalLayout>
+</Window>

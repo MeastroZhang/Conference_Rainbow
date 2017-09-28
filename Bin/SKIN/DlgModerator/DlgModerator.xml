@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="800,500" caption="0,0,0,30" roundcorner="4,4">
+	<Font name="微软雅黑" size="12" bold="true" default="true" />
+	<Font name="微软雅黑" size="14" id="1" />
+	<Default name="Button" value="height=&quot;40&quot; width=&quot;44&quot;"/>
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <VerticalLayout >
+        <HorizontalLayout height="30" bkcolor="#FF288add">
+            <Label name="labCaption" width="200" textcolor="#FFFFFFFF" textpadding="10,0,0,0" />
+			<VerticalLayout />
+            <Button name="btnMin" width="30" normalimage="\\common\\btnMin.png" hotimage="\\common\\btnMinHot.png" />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+		<HorizontalLayout height="140" bkcolor="#FFEEEEEE">
+			<VerticalLayout >
+				<HorizontalLayout height="40">
+					<VerticalLayout />
+					<Label name="labTitle" width="400" height="40" align="center" font="1" textcolor="#FF666666" bkimage="\\DlgModerator\\bgTitle.png" />
+					<VerticalLayout />
+				</HorizontalLayout>
+				<HorizontalLayout height="60" padding="90,0,60,0">
+					<Button name="btnModeratorMode" visible="false" width="44" height="40" padding="0,10,0,10" normalimage="\\DlgModerator\\btnModeratorMode.png" hotimage="\\DlgModerator\\btnModeratorModeHot.png" />
+					<Button name="btnConferenceMode" width="44" height="40" padding="0,10,0,10" normalimage="\\DlgModerator\\btnConferenceMode.png" hotimage="\\DlgModerator\\btnConferenceModeHot.png" />
+					<Button name="btnLock" width="44" height="40" padding="68,10,0,10" normalimage="\\DlgModerator\\btnLock.png" hotimage="\\DlgModerator\\btnLockHot.png" />
+					<Button name="btnUnLock" visible="false" width="44" height="40" padding="68,10,0,10" normalimage="\\DlgModerator\\btnUnLock.png" hotimage="\\DlgModerator\\btnUnLockHot.png" />
+					<Button name="btnMuteVideoAll" width="44" height="40" padding="68,10,0,10" normalimage="\\common\\btnVideo.png" hotimage="\\common\\btnVideoHot.png" />
+					<Button name="btnUnMuteVideoAll" visible="false" width="44" height="40" padding="68,10,0,10" normalimage="\\common\\btnVideoClosed.png" hotimage="\\common\\btnVideoClosedHot.png" />
+					<Button name="btnMuteAudioAll" width="44" height="40" padding="60,10,0,10" normalimage="\\common\\btnMic.png" hotimage="\\common\\btnMicHot.png" />
+					<Button name="btnUnMuteAudioAll" visible="false" width="44" height="40" padding="60,10,0,10" normalimage="\\common\\btnMicClosed.png" hotimage="\\common\\btnMicClosedHot.png" />
+					<Button name="btnRecord" width="44" height="40" padding="68,10,0,10" normalimage="\\DlgModerator\\btnRecord.png" hotimage="\\DlgModerator\\btnRecordHot.png" />
+					<Button name="btnRecordPause" visible="false" width="44" height="40" padding="68,10,0,10" normalimage="\\DlgModerator\\btnRecordPause.png" hotimage="\\DlgModerator\\btnRecordPauseHot.png" />
+					<Button name="btnRecordRecover" visible="false" width="44" height="40" padding="68,10,0,10" normalimage="\\DlgModerator\\btnRecordContinue.png" hotimage="\\DlgModerator\\btnRecordContinueHot.png" />
+					<Button name="btnStopRecord" enabled="false" width="44" height="40" padding="20,10,0,10" normalimage="\\DlgModerator\\btnRecordStop.png" hotimage="\\DlgModerator\\btnRecordStopHot.png" disabledimage="\\DlgModerator\\btnRecordDisable.png" />
+					<Button name="btnForbidAll" width="44" height="40" padding="58,10,0,10" normalimage="\\DlgModerator\\btnForbid.png" hotimage="\\DlgModerator\\btnForbidHot.png" />
+				</HorizontalLayout>
+				<HorizontalLayout height="40">
+					<VerticalLayout />
+					<VerticalLayout>
+						<HorizontalLayout width="270" height="30" bkimage="\\DlgModerator\\bgSearch.png">
+							<Edit name="editSearch" width="220" height="26" padding="10,2,0,2" font="1" />
+							<Option name="optSearch" width="30" padding="0,0,10,0" normalimage="\\common\\btnSearch.png" hotimage="\\common\\btnSearchSelect.png" selectedimage="\\common\\btnSearchChose.png" />
+						</HorizontalLayout>
+					</VerticalLayout>
+					<VerticalLayout />
+				</HorizontalLayout>
+			</VerticalLayout>
+        </HorizontalLayout>
+        <List name="listParticipants" header="hidden" vscrollbar="true" itemshowhtml="true" bkcolor="FFFFFFFF">
+		</List>
+    </VerticalLayout>
+</Window>

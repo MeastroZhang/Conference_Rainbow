@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,150">
+    <VerticalLayout bkcolor="#FFF2F2F2">
+        <Label name="labCaption" height="29" textpadding="10,0,0,0" textcolor="#FF333333" />
+		<Label height="1" bkcolor="#FFE5E5E5" />
+		<HorizontalLayout height="20" padding="0,20,0,0">
+			<Label name="labMic" width="70" align="right" textcolor="#FF666666" />
+			<Combo name="comMicDevice" width="180" textpadding="5,0,0,0" itemfont="2" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+			</Combo>
+		</HorizontalLayout>
+		<HorizontalLayout height="20" padding="0,20,0,0" >
+			<Label name="labMicVolume" width="70" align="right" textcolor="#FF666666" />
+			<Slider name="sliderMicVolume" height="10" width="140" padding="0,5,0,0" min="0" max="65535" bkimage="\\DlgSetting\\sliderVolumeNormal.png" foreimage="\\DlgSetting\\sliderVolumeHot.png" thumbimage="\\DlgSetting\\thumbFullNormal.png" thumbhotimage="\\DlgSetting\\thumbFullHot.png" disabledimage="\\DlgSetting\\sliderVolumeNormal.png"/>
+		</HorizontalLayout>
+		<Option name="optAGC" height="16" padding="40,20,0,0" textpadding="20,0,0,0" textcolor="#FF666666" align="left" font="1" normalimage="file='\\DlgSetting\\OptNormal.png' dest='0,0,16,16'" selectedimage="file='\\DlgSetting\\OptSelect.png' dest='0,0,16,16'"/>
+    </VerticalLayout>
+</Window>

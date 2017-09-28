@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,240" roundcorner="2,2">
+	<Font name="微软雅黑" size="14" default="true" />
+	<Font id="1" name="微软雅黑" size="12" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30" bkcolor="#FF288ADD">
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+        <Label name="labModeratorExit1" padding="40,30,0,0" textcolor="#FF666666" />
+		<Label name="labModeratorExit2" padding="40,10,0,0" textcolor="#FF666666" />
+		<Label name="labModeratorExit3" padding="40,10,0,0" textcolor="#FF666666" />
+		<HorizontalLayout height="24" padding="0,30,0,0">
+			<VerticalLayout />
+            <Button name="btnEndConference" height="24" width="64" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn64px.png" hotimage="\\common\\btn64pxHot.png" />
+			<Button name="btnExitConference" height="24" width="80" padding="20,0,0,0" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png" />
+			<Button name="btnCancel" height="24" width="80" padding="20,0,40,0" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

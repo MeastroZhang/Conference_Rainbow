@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="150,150">
+    <VerticalLayout width="150" height="150" bkimage="\\DlgContacts\\bgRoomHot.png" >
+
+    </VerticalLayout>
+</Window>

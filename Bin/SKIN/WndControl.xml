@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="900,700">
+    <VerticalLayout enabled="true" bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30">
+            <VerticalLayout enabled="true" />
+            <Button name="btnClose" width="30" normalimage="\\DlgLogin\\btnCloseDefault.png" hotimage="\\DlgLogin\\btnCloseSelected.png" pushedimage="\\DlgLogin\\btnClosePressed.png" />
+        </HorizontalLayout>
+        <TileLayout name="tileShare" />
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="254,188">
+    <VerticalLayout bkimage="\\DlgContacts\\bgRoom.png" >
+		<HorizontalLayout name="horRoomTitle" height="40" padding="0,51,0,0">
+			<VerticalLayout height="40" width="54">
+				<Label name="labIsOwner" visible="false" width="20" height="20" padding="20,0,0,0" bkimage="\\DlgContacts\\labOwner.png"/>
+			</VerticalLayout>
+			<VerticalLayout height="40" width="200">
+				<Label name="labRoomName" height="20" font="1" endellipsis="true"/>
+				<Label name="labRoomID" height="20" font="1" endellipsis="true"/>
+			</VerticalLayout>	
+		</HorizontalLayout>
+		<Button name="btnRoomJoin" visible="false" text="进入会议" font="1" width="182" height="44" padding="36,51,0,0" normalimage="\\DlgContacts\\btnRoomJoin.png" hotimage="\\DlgContacts\\btnRoomJoinHot.png"/>
+		<HorizontalLayout />
+        <HorizontalLayout name="horRoomFlg" height="20" padding="0,0,0,20">
+			<Label name="labLock" visible="false" width="20" height="20" padding="20,0,10,0" bkimage="\\DlgContacts\\labLock.png" />
+            <Label name="labPin" visible="false" width="20" height="20" padding="0,0,10,0" bkimage="\\DlgContacts\\labPin.png" />
+            <Label name="labFull" visible="false" width="20" height="20" padding="0,0,10,0" bkimage="\\DlgContacts\\labFull.png" />
+            <Label name="labParNum" visible="false" width="20" height="20" padding="0,0,10,0" />
+			<HorizontalLayout height="20" />
+        </HorizontalLayout>
+		<HorizontalLayout name="horRoomControl" visible="false" height="24" padding="0,0,0,20" >
+			<Button name="btnRoomLock" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnRoomLock.png" hotimage="\\DlgContacts\\btnRoomLockHot.png"/>
+			<Button name="btnRoomUnLock" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnRoomUnLock.png" hotimage="\\DlgContacts\\btnRoomUnLockHot.png"/>
+            <Button name="btnRoomSetting" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnRoomSetting.png" hotimage="\\DlgContacts\\btnRoomSettingHot.png"/>
+            <Button name="btnRoomInvite" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnRoomInvite.png" hotimage="\\DlgContacts\\btnRoomInviteHot.png"/>
+			<Button name="btnAdd" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnAdd.png" hotimage="\\DlgContacts\\btnAddHot.png"/>
+			<Button name="btnRemove" width="24" height="24" padding="34,0,0,0" normalimage="\\DlgContacts\\btnRemove.png" hotimage="\\DlgContacts\\btnRemoveHot.png"/>
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

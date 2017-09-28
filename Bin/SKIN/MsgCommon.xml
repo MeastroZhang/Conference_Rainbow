@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,200" roundcorner="2,2">
+	<Font name="微软雅黑" size="14" default="true" />
+	<Font id="1" name="微软雅黑" size="12" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30" bkcolor="#FF288ADD">
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+        <Label name="labMsg" padding="0,50,0,0" align="center" textcolor="#FF666666" />
+		<HorizontalLayout height="24" padding="0,30,0,0">
+            <VerticalLayout />
+			<Button name="btnOK" height="24" width="64" padding="20,0,0,0" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn64px.png" hotimage="\\common\\btn64pxHot.png" />
+			<VerticalLayout />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{34e18dce-2145-4e88-8948-75fdb818c3a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\VidyoClient">
+      <UniqueIdentifier>{7dab9949-a0d3-4ae1-8dfb-c25e7e45302a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\Util">
+      <UniqueIdentifier>{71e95d88-eeb3-4c5f-96da-dd7506522725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\gsoap">
+      <UniqueIdentifier>{13f97d96-b4b9-4a89-8c18-6615352432cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\common">
+      <UniqueIdentifier>{e325ea76-b5af-4b6d-9cd6-9afe1ab9981e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgContacts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Util\Util.cpp">
+      <Filter>Include\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgConference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLogin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WSgSoap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\gsoap\soapC.cpp">
+      <Filter>Include\gsoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\gsoap\soapClient.cpp">
+      <Filter>Include\gsoap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\gsoap\stdsoap2.cpp">
+      <Filter>Include\gsoap</Filter>
+    </ClCompile>
+    <ClCompile Include="WndToolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLoginGuest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgGuest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAVSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\common\MixerInfo.cpp">
+      <Filter>Include\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\common\Wave.cpp">
+      <Filter>Include\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\common\VideoCapture.cpp">
+      <Filter>Include\common</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSharing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRoomSetting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgModerator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndSetPhoto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetPhotoPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndSetMic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndSetVideo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndSetSpeaker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgRoomExit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgModeratorExit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndSetPhotoPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndInputPin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndProcessing.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgApplyForbid.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndFastReply.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrivateChat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgCommon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndRightTopBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuTray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WndLectureMode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrame.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgContacts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClient.h">
+      <Filter>Include\VidyoClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClientMessages.h">
+      <Filter>Include\VidyoClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClientParameters.h">
+      <Filter>Include\VidyoClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoTypes.h">
+      <Filter>Include\VidyoClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\Util\Util.h">
+      <Filter>Include\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgConference.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLogin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\DataDefine.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WSgSoap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\gsoap\soapH.h">
+      <Filter>Include\gsoap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\gsoap\soapStub.h">
+      <Filter>Include\gsoap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\gsoap\stdsoap2.h">
+      <Filter>Include\gsoap</Filter>
+    </ClInclude>
+    <ClInclude Include="WndToolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLoginGuest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgGuest.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAVSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\common\MixerInfo.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\common\Wave.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\common\VideoCapture.h">
+      <Filter>Include\common</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSharing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRoomSetting.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgModerator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndSetPhoto.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetPhotoPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndSetMic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndSetVideo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndSetSpeaker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgRoomExit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgModeratorExit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndSetPhotoPath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndInputPin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndProcessing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgApplyForbid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndFastReply.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrivateChat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndRightTopBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuTray.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WndLectureMode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Conference.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Include\gsoap\VidyoPortalUserServiceBinding.nsmap">
+      <Filter>Include\gsoap</Filter>
+    </None>
+    <None Include="res\logo.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

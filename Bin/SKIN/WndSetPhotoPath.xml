@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="360,180">
+	<Font name="微软雅黑" size="14" default="true" />
+	<Font id="1" name="微软雅黑" size="12" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30" bkcolor="#FF288ADD">
+			<Label name="labCaption" width="100" textpadding="10,0,0,0" textcolor="#FFFFFFFF" />
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+        <Label name="labPath" height="20" width="240" padding="60,30,0,0" textcolor="#FF666666" />
+		<Edit name="editPhoto" enabled="false" height="20" width="240" padding="60,20,0,0" textcolor="#FF666666" font="1" bkimage="\\common\\edit240px.png"/>
+		<HorizontalLayout padding="0,20,0,0" height="24">
+			<HorizontalLayout />
+			<Button name="btnChangePath" width="80" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png"/>
+			<Button name="btnOpen" width="80" padding="20,0,60,0" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png"/>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

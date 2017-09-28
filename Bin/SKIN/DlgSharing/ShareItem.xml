@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="180,140">
+    <VerticalLayout width="180" height="140" bkcolor="#FFFFFFFF">
+		<Button name="btnPicture" height="100" padding="10,10,10,0" bkimage="\\DlgSharing\\ShareScreenItem.png" />
+		<Label name="labShareName" height="20" padding="10,0,10,10" textpadding="10,0,0,0" endellipsis="true" bkcolor="#FFA6AAAF" textcolor="#FFFFFFFF" />
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="180,180">
+    <VerticalLayout width="180" height="180" bkimage="\\common\\bgDateTime.png" >
+        <HorizontalLayout height="30" >
+			<Label name="labWeek" padding="40,10,0,0" width="40" font="1" textcolor="#FF666666" />
+			<Label name="labClock" width="70" padding="0,10,0,0" font="1" textcolor="#FF666666" />
+		</HorizontalLayout>
+		<Label name="labWeekDay" padding="0,0,0,30" font="4" align="center" textcolor="#FFea2000"/>
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1022,670" caption="0,0,0,30" roundcorner="4,4">
+	<Font name="微软雅黑" size="14" bold="true" default="true" />
+	<Font id="1" name="微软雅黑" size="16" />
+	<Font id="2" name="微软雅黑" size="12" />
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <VerticalLayout bkimage="\\common\\bgConference.png" bkcolor="#FFeeeeee">
+        <HorizontalLayout height="30" bkcolor="#FF288add">
+			<Label name="labLogo" width="80" bkimage="\\DlgConference\\logo.png" />
+            <Label name="labCaption" width="200" textcolor="#FFFFFFFF" padding="10,0,0,0" />
+			<VerticalLayout />
+            <Button name="btnMin" width="30" padding="20,0,0,0" normalimage="\\DlgConference\\btnMin.png" hotimage="\\DlgConference\\btnMinHot.png" />
+            <Button name="btnClose" width="30" normalimage="\\DlgConference\\btnClose.png" hotimage="\\DlgConference\\btnCloseHot.png" />
+        </HorizontalLayout>
+		<HorizontalLayout name="horBody">
+			<VerticalLayout name="verConference" bkcolor="#FF000000" />
+			<VerticalLayout name="verChat" visible="false" width="300" bkcolor="#FFEFEFEF">
+				<HorizontalLayout name="ChatTab" width="120" height="30" padding="90,20,0,0" bkimage="\\DlgConference\\optAVTitle.png">
+					<Option name="optGroupChat" group="ChatTab" selected="true" width="60" height="30" textcolor="#FF288ADD" selectedtextcolor="#FFFFFFFF" selectedimage="\\DlgConference\\optLeftSelect.png"/>
+					<Option name="optPrivateChat" group="ChatTab" width="60" height="30" textcolor="#FF288ADD" selectedtextcolor="#FFFFFFFF" selectedimage="\\DlgConference\\optRightSelect.png"/>
+				</HorizontalLayout>
+				<TabLayout name="tabChat" width="300">
+					<VerticalLayout>
+						<HorizontalLayout height="1" bkcolor="#FFE5E5E5" padding="0,19,0,0" />
+						<RichEdit name="richGroupChatView" width="300" multiline="true" vscrollbar="true" autovscroll="true" readonly="true" textpadding="10,10,10,10" />
+						<HorizontalLayout height="32" width="298" padding="1,0,1,0" bkimage="\\DlgConference\\bgFace.png">
+							<Button name="btnFace" width="36" height="32" normalimage="\\DlgConference\\btnFace.png" hotimage="\\DlgConference\\btnFaceHot.png" />
+							<VerticalLayout />
+						</HorizontalLayout>
+						<RichEdit name="richGroupChatInput" height="66" width="300" multiline="true" vscrollbar="true" autovscroll="true" rich="false" textpadding="10,10,10,10" />
+						<HorizontalLayout height="34">
+							<HorizontalLayout />
+							<Button name="btnSend" width="64" height="24" padding="0,0,10,10" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\DlgConference\\btn64px.png" hotimage="\\DlgConference\\btn64pxHot.png" />
+						</HorizontalLayout>
+					</VerticalLayout>
+					<VerticalLayout>
+						<HorizontalLayout width="240" height="30" padding="30,10,30,10" bkimage="\\DlgConference\\bgSearch.png">
+							<Edit name="editSearch" width="190" height="26" padding="10,2,0,2" />
+							<Option name="optSearch" width="30" padding="0,0,10,0" normalimage="\\DlgConference\\btnSearch.png" hotimage="\\DlgConference\\btnSearchSelect.png" selectedimage="\\DlgConference\\btnSearchChose.png" />
+						</HorizontalLayout>
+						<List name="listParticipants" header="hidden" itemfont="1" padding="0,0,0,30" itemshowhtml="true" vscrollbar="true" />
+					</VerticalLayout>
+				</TabLayout>
+			</VerticalLayout>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

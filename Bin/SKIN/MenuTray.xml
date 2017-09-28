@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="120,120">
+	<VerticalLayout>
+		<List header="hidden">
+			<ListContainerElement name="menu_psw" height="30">
+				<Label text="密码" textpadding="30,0,0,0" textcolor="#FF333333" normalimage="file='\\common\\trayPsw.png' dest='0,0,30,30'"/>
+			</ListContainerElement>
+			<ListContainerElement name="menu_logout" height="30">
+				<Label text="注销" textpadding="30,0,0,0" textcolor="#FF333333" normalimage="file='\\common\\trayLogout.png' dest='0,0,30,30'"/>
+			</ListContainerElement>
+			<ListContainerElement name="menu_open" height="30">
+				<Label text="打开" textpadding="30,0,0,0" textcolor="#FF333333" normalimage="file='\\common\\trayShow.png' dest='0,0,30,30'"/>
+			</ListContainerElement>
+			<ListContainerElement name="menu_exit" height="30">
+				<Label text="退出" textpadding="30,0,0,0" textcolor="#FF333333" normalimage="file='\\common\\trayExit.png' dest='0,0,30,30'" />
+			</ListContainerElement>
+		</List>
+	</VerticalLayout>
+</Window>

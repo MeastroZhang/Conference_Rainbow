@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,100" roundcorner="4,4">
+	<Font name="微软雅黑" size="14" default="true" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <Label name="labJoining" padding="80,35,80,35" width="240" textpadding="40,0,0,0" textcolor="#FF666666" bkimage="file='\\common\\labProcessing.png' dest='0,0,30,30'" />
+    </VerticalLayout>
+</Window>

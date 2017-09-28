@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED561804-1EB3-4F77-B327-4BC7FADB14AB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Conference</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../bin/</OutDir>
+    <TargetName>$(ProjectName)_ud</TargetName>
+    <IntDir>../../obj/Debug/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../bin/</OutDir>
+    <IntDir>../../obj/Debug/$(ProjectName)/</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../Include/</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Comctl32.lib;winmm.lib;Strmiids.lib;comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../../lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../Include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../../lib/;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Comctl32.lib;winmm.lib;Strmiids.lib;comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Include\common\MixerInfo.cpp" />
+    <ClCompile Include="..\..\Include\common\VideoCapture.cpp" />
+    <ClCompile Include="..\..\Include\common\Wave.cpp" />
+    <ClCompile Include="..\..\Include\gsoap\soapC.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\gsoap\soapClient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\gsoap\stdsoap2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\Include\Util\Util.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DlgAVSetting.cpp" />
+    <ClCompile Include="DlgConference.cpp" />
+    <ClCompile Include="DlgContacts.cpp" />
+    <ClCompile Include="DlgGuest.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgLoginGuest.cpp" />
+    <ClCompile Include="DlgModerator.cpp" />
+    <ClCompile Include="DlgPrivateChat.cpp" />
+    <ClCompile Include="DlgRoomSetting.cpp" />
+    <ClCompile Include="DlgSetPhotoPath.cpp" />
+    <ClCompile Include="DlgSetting.cpp" />
+    <ClCompile Include="DlgSharing.cpp" />
+    <ClCompile Include="Main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MenuTray.cpp" />
+    <ClCompile Include="MsgApplyForbid.cpp" />
+    <ClCompile Include="MsgCommon.cpp" />
+    <ClCompile Include="MsgModeratorExit.cpp" />
+    <ClCompile Include="MsgRoomExit.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="WndControl.cpp" />
+    <ClCompile Include="WndFastReply.cpp" />
+    <ClCompile Include="WndInputPin.cpp" />
+    <ClCompile Include="WndLectureMode.cpp" />
+    <ClCompile Include="WndProcessing.cpp" />
+    <ClCompile Include="WndRightTopBar.cpp" />
+    <ClCompile Include="WndSetMic.cpp" />
+    <ClCompile Include="WndSetPhoto.cpp" />
+    <ClCompile Include="WndSetPhotoPath.cpp" />
+    <ClCompile Include="WndSetSpeaker.cpp" />
+    <ClCompile Include="WndSetVideo.cpp" />
+    <ClCompile Include="WndToolbar.cpp" />
+    <ClCompile Include="WSgSoap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\common\MixerInfo.h" />
+    <ClInclude Include="..\..\Include\common\VideoCapture.h" />
+    <ClInclude Include="..\..\Include\common\Wave.h" />
+    <ClInclude Include="..\..\Include\DataDefine.h" />
+    <ClInclude Include="..\..\Include\gsoap\soapH.h" />
+    <ClInclude Include="..\..\Include\gsoap\soapStub.h" />
+    <ClInclude Include="..\..\Include\gsoap\stdsoap2.h" />
+    <ClInclude Include="..\..\Include\Util\Util.h" />
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClient.h" />
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClientMessages.h" />
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoClientParameters.h" />
+    <ClInclude Include="..\..\Include\VidyoClient\VidyoTypes.h" />
+    <ClInclude Include="DlgAVSetting.h" />
+    <ClInclude Include="DlgConference.h" />
+    <ClInclude Include="DlgContacts.h" />
+    <ClInclude Include="DlgGuest.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgLoginGuest.h" />
+    <ClInclude Include="DlgModerator.h" />
+    <ClInclude Include="DlgPrivateChat.h" />
+    <ClInclude Include="DlgRoomSetting.h" />
+    <ClInclude Include="DlgSetPhotoPath.h" />
+    <ClInclude Include="DlgSetting.h" />
+    <ClInclude Include="DlgSharing.h" />
+    <ClInclude Include="MainFrame.h" />
+    <ClInclude Include="MenuTray.h" />
+    <ClInclude Include="MsgApplyForbid.h" />
+    <ClInclude Include="MsgCommon.h" />
+    <ClInclude Include="MsgModeratorExit.h" />
+    <ClInclude Include="MsgRoomExit.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="WndControl.h" />
+    <ClInclude Include="WndFastReply.h" />
+    <ClInclude Include="WndInputPin.h" />
+    <ClInclude Include="WndLectureMode.h" />
+    <ClInclude Include="WndProcessing.h" />
+    <ClInclude Include="WndRightTopBar.h" />
+    <ClInclude Include="WndSetMic.h" />
+    <ClInclude Include="WndSetPhoto.h" />
+    <ClInclude Include="WndSetPhotoPath.h" />
+    <ClInclude Include="WndSetSpeaker.h" />
+    <ClInclude Include="WndSetVideo.h" />
+    <ClInclude Include="WndToolbar.h" />
+    <ClInclude Include="WSgSoap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Conference.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Include\gsoap\VidyoPortalUserServiceBinding.nsmap" />
+    <None Include="res\logo.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Conference.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

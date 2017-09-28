@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1022,600">
+	<Font name="微软雅黑" size="16" id="1" />
+    <VerticalLayout bkcolor="#FFF2F2F2">
+		<HorizontalLayout height="412">
+			<VerticalLayout />
+			<VerticalLayout width="480" bkimage="\\common\\bgLectureMode.png">
+				<Label name="labLectureMode" text="您被设为主持人" height="45" align="center" font="1"/>
+			</VerticalLayout>
+			<VerticalLayout />
+		</HorizontalLayout>
+		<HorizontalLayout />
+    </VerticalLayout>
+</Window>

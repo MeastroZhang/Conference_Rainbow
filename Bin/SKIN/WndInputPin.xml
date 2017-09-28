@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="400,200" roundcorner="2,2">
+	<Font name="微软雅黑" size="14" default="true" />
+	<Font id="1" name="微软雅黑" size="12" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30" bkcolor="#FF288ADD">
+			<Label name="labCaption" width="100" textpadding="10,0,0,0" font="1" textcolor="#FFFF0000" />
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+		<Label name="labWrongPin" width="80" height="20" padding="40,20,0,0" textpadding="10,0,0,0" textcolor="#FF288ADD" />
+		<Edit name="editInputPin" height="30" width="320" padding="40,4,40,0" textcolor="#FF666666" bkimage="\\common\\edit320px.png"/>
+		<HorizontalLayout padding="0,20,0,0" height="24">
+			<HorizontalLayout />
+			<Button name="btnCancel" width="64" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn64px.png" hotimage="\\common\\btn64pxHot.png"/>
+			<Button name="btnOK" width="64" padding="20,0,40,0" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn64px.png" hotimage="\\common\\btn64pxHot.png"/>
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

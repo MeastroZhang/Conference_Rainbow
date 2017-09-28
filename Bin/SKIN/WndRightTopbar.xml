@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="192,32">
+	<Default name="Button" value="height=&quot;32&quot; width=&quot;32&quot;"/>
+    <HorizontalLayout bkcolor="#FFB2B2B2">
+		<VerticalLayout />
+        <Button name="btnFlgModerator" visible="false" normalimage="\\DlgConference\\btnFlgModerator.png"/>
+		<Button name="btnFlgRaiseHand" visible="false" normalimage="\\DlgConference\\btnFlgRaiseHand.png"/>
+		<Button name="btnNoVideo" visible="false" normalimage="\\DlgConference\\btnNoVideo.png"/>
+		<Button name="btnNoAudio" visible="false" normalimage="\\DlgConference\\btnNoAudio.png"/>
+		<Button name="btnNoSpeaker" visible="false" normalimage="\\DlgConference\\btnNoSpeaker.png"/>
+		<Button name="btnRestore" visible="false" normalimage="\\DlgConference\\btnRestore.png" hotimage="\\DlgConference\\btnRestoreHot.png"/>
+    </HorizontalLayout>
+</Window>

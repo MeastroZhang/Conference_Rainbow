@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="900,630" roundcorner="2,2">
+	<Font name="微软雅黑" size="14" bold="true" default="true" />
+	<Font id="1" name="微软雅黑" size="12" />
+	<Font id="2" name="微软雅黑" size="10" />
+    <VerticalLayout bkcolor="#FFFFFFFF">
+        <HorizontalLayout name="Caption" height="30" bkcolor="#FF288add">
+			<Label name="labCaption" width="200" textcolor="#FFFFFFFF" padding="10,0,0,0" />
+            <VerticalLayout />
+            <Button name="btnClose" width="30" normalimage="\\common\\btnClose.png" hotimage="\\common\\btnCloseHot.png" />
+        </HorizontalLayout>
+		<HorizontalLayout name="horTitleShared" visible="false" height="40" bkimage="\\common\\bgTitle.png">
+			<Label name="labShared" width="200" textcolor="#FF666666" padding="10,0,0,0" font="1" />
+			<VerticalLayout />
+			<Button name="btnStopShareView" width="120" height="24" padding="0,8,60,8" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn120px.png" hotimage="\\common\\btn120pxHot.png" />
+		</HorizontalLayout>
+		<HorizontalLayout name="horLineShared1" visible="false" height="1" bkcolor="#FFCECECE"/>
+		<HorizontalLayout name="horTileShared" visible="false" height="180">
+			<TileLayout name="tileShared" height="180" padding="0,1,0,1" bkcolor="#FFFFFFFF" />
+		</HorizontalLayout>
+		<HorizontalLayout name="horLineShared2" visible="false" height="1" bkcolor="#FFCECECE"/>
+		<HorizontalLayout height="40" bkimage="\\common\\bgTitle.png">
+			<Label name="labBeShare" width="200" textcolor="#FF666666" padding="10,0,0,0" font="1" />
+			<VerticalLayout />
+			<Button name="btnStartShare" width="80" height="24" padding="0,8,40,8" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png" />
+			<Button name="btnStopShare" visible="false" width="80" height="24" padding="0,8,40,8" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png" />
+			<Button name="btnReShare" width="80" height="24" padding="0,8,60,8" font="1" textcolor="#FF288ADD" hottextcolor="#FFFFFFFF" pushedtextcolor="#FF288ADD" normalimage="\\common\\btn80px.png" hotimage="\\common\\btn80pxHot.png" />
+		</HorizontalLayout>
+		<HorizontalLayout height="1" bkcolor="#FFCECECE"/>
+		<HorizontalLayout height="340">
+			<TileLayout name="tileBeShare" height="340" padding="0,1,0,1" bkcolor="#FFFFFFFF" />
+		</HorizontalLayout>
+    </VerticalLayout>
+</Window>

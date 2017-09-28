@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,120">
+    <VerticalLayout bkcolor="#FFF2F2F2">
+        <Label name="labCaption" height="29" textpadding="10,0,0,0" textcolor="#FF333333" />
+		<Label height="1" bkcolor="#FFE5E5E5" />
+		<HorizontalLayout height="20" padding="0,20,0,0">
+			<Label name="labCamera" width="60" align="right" textcolor="#FF666666" />
+			<Combo name="comCameraDevice" width="180" textpadding="5,0,0,0" itemfont="2" itemtextcolor="#FF666666" bkimage="\\DlgSetting\\comDeviceNormal.png" hotimage="\\DlgSetting\\comDeviceHot.png">
+			</Combo>
+		</HorizontalLayout>
+		<Option name="optSelfView" height="16" padding="40,20,0,0" textpadding="20,0,0,0" textcolor="#FF666666" align="left" font="2" normalimage="file='\\DlgSetting\\OptNormal.png' dest='0,0,16,16'" selectedimage="file='\\DlgSetting\\OptSelect.png' dest='0,0,16,16'"/>
+    </VerticalLayout>
+</Window>
